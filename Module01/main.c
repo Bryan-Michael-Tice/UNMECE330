@@ -4,19 +4,15 @@
 
 int main(){
 
-//	int choice=100;
         int m,n;
 
         matrix newMatrix,newMatrix1,newMatrix2;
        	_MatNum *Values;
-   //     newMatrix = malloc(sizeof(_MatNum));
-
 
         
     		displayMatrix();
        
 	
-//
 				printf("number of rows?");
 				scanf("%d",&newMatrix.Rows);
 				printf("number of columns?");
@@ -24,7 +20,6 @@ int main(){
 
 			m=newMatrix.Rows;
 			n=newMatrix.Cols;
-//printf("%d%d",m,n);
 
      		newMatrix  = GetMatrix(m,n,Values);
                 
@@ -32,7 +27,6 @@ int main(){
 					
 				for(int j=0;j<n;j++){
 					
-			//	a->element[i][j]  = 0;
 					printf("  %.2lf   ",newMatrix.element[i][j]);
 		       		 }
 			printf("\n");
@@ -46,7 +40,6 @@ int main(){
 					
 				for(int j=0;j<n;j++){
 					
-			//	a->element[i][j]  = 0;
 					printf("  \033[1;31m %.3lf\033[0m   ",newMatrix1.element[i][j]);
 		       		 }
 			printf("\n");
@@ -59,13 +52,13 @@ int main(){
 					
 				for(int j=0;j<n;j++){
 					
-			//	a->element[i][j]  = 0;
 					printf("  \033[1;31m %.3lf\033[0m   ",newMatrix2.element[i][j]);
 		       		 }
 			printf("\n");
 		
 			}
 	printf("\n WELCOME TO THE\033[1;31m MATRIX\033[0m ADT\n ");
+//      having trouble with these free funcgtions 
 //	free(newMatrix);
 //	free(newMatrix1);
 return 0;

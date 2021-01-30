@@ -1,25 +1,20 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef double _MatNum; //create a floating point keyword
+typedef double _MatNum; //define a floating point 
 
 typedef struct{
 
 	int Rows, Cols;
-	_MatNum** element;
+	_MatNum** element;//give it a two pointers floating pint 
 	
 }matrix;
 
 //typedef struct _Matrix matrix;
 
-
-
 void displayMatrix();
 
 matrix GetMatrix(int Row,int Col,_MatNum* ValueZero);
-
-//struct _Matrix InitialValues(int Rows, int Cols, _MatNum* Value);
-
 
 matrix create_empty(int Rows, int Cols);
 

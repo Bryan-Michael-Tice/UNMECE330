@@ -30,81 +30,36 @@ void displayMatrix(){
 
 matrix GetMatrix(int Row,int Col,_MatNum* ValueZero){
 			
-				matrix resultant_Matrix;
+	matrix resultant_Matrix;
 
 
-				resultant_Matrix.element = (_MatNum**)malloc( Row* sizeof(_MatNum*));
+		resultant_Matrix.element = (_MatNum**)malloc( Row* sizeof(_MatNum*));
 
-				printf("Matrix a is now\n");
-		       		for(int k = 0 ; k<Row; k++){
+//		printf("Matrix a is now\n");
+	   	
+		for(int k = 0 ; k<Row; k++){
 				
-					resultant_Matrix.element[k] = (_MatNum*)malloc(Col * sizeof(_MatNum*));
+			resultant_Matrix.element[k] = (_MatNum*)malloc(Col * sizeof(_MatNum*));
 
-				}
-				for(int i=0;i<Row;i++){
+		}
+		for(int i=0;i<Row;i++){
 					
-					for(int j=0;j<Col;j++){
+			for(int j=0;j<Col;j++){
 					
-						//resultant_Matrix.element[i][j]  =*(ValueZero + (Row*i+j));
+					//resultant_Matrix.element[i][j]  =*(ValueZero + (Row*i+j));
 					//	scanf("%lf",&resultant_Matrix.element[i][j]);
-					
-						resultant_Matrix.element[i][j]  =175;
-						printf(" %.2lf ",resultant_Matrix.element[i][j]);
-			
-	
-				
-				}
-					printf("\n");	
-					}
+				//
+				//
+				//these are ways i am inputing values into the matrix for testing. 	
+				resultant_Matrix.element[i][j]  =175;
+				printf(" %.2lf ",resultant_Matrix.element[i][j]);
+			}
+				printf("\n");	
+	}
 
 				return resultant_Matrix;
 			//	free(resultant_Matrix);
 
-
-	/*			printf("number of rows?");
-				scanf("%d",&Row);
-				printf("number of columns?");
-				scanf("%d",&Col);
-*/
-			/*	newMatrix = create_empty(int Row,int Col);
-
-				for(int i=0;i<sizeof(newMatrix.Rows);i++){
-					
-					for(int j=0;j<sizeof(newMatrix.Cols);j++){
-					
-						printf("%lf",newMatrix.element[i][j]);
-
-					}
-				}
-				return newMatrix;
-		//		free(AnotherMatrix);
-		*/
-			
-				/*	printf("%d %d\n\n", a->Rows,a->Cols);
-				printf("Matrix a is now\n");
-			
-	
-				a->element = (_MatNum**)malloc(a->Rows* sizeof(_MatNum*));
-
-				for(int i = 0 ; i<a->Rows; i++){
-				
-					a->element[i] = (_MatNum*)malloc(a->Cols * sizeof(_MatNum*));
-
-				}
-				for(int i=0;i<a->Rows;i++){
-					
-					for(int j=0;j<a->Cols;j++){
-					
-						a->element[i][j]  = 0;
-						printf("  %.2lf   ",a->element[i][j]);
-					}
-				
-				printf("\n");
-				}
-
-		
-				printf("\n");
-		}*/
 
 
 }
@@ -114,27 +69,18 @@ matrix create_empty(int Rows, int Cols){
 
 
 				matrix temp;
-//
-	/*			printf("number of rows?");
-				scanf("%d",&a->Rows);
-				printf("number of columns?");
-				scanf("%d",&a->Cols);
-			
-			*/	printf("%d %d\n\n",Rows,Cols);
-				printf("Matrix a is now\n");
-			
 	
 				temp.element = (_MatNum**)malloc( Rows* sizeof(_MatNum*));
 
 				printf("Matrix a is now\n");
-		       		for(int k = 0 ; k<Rows; k++){
+			       		for(int k = 0 ; k<Rows; k++){
 				
-					temp.element[k] = (_MatNum*)malloc(Cols * sizeof(_MatNum*));
+						temp.element[k] = (_MatNum*)malloc(Cols * sizeof(_MatNum*));
 
 				}
-				for(int i=0;i<Rows;i++){
+					for(int i=0;i<Rows;i++){
 					
-					for(int j=0;j<Cols;j++){
+						for(int j=0;j<Cols;j++){
 					
 						temp.element[i][j]  =0.00;
 						printf("  %.2lf   ",temp.element[i][j]);
@@ -155,7 +101,7 @@ matrix create_empty(int Rows, int Cols){
 }
 
 matrix add(matrix *newMatrix,matrix *newMatrix1){
-
+//not adding properly
 
 	matrix temp;
 		
