@@ -18,5 +18,5 @@ matrix GetMatrix(int Row,int Col,_MatNum* ValueZero);
 
 matrix create_empty(int Rows, int Cols);
 
-matrix add(matrix *newMatrix,matrix *newMatrix1);
+matrix add(matrix FirstMatrix,matrix SecondMatrix);
 

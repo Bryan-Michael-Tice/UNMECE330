@@ -82,7 +82,7 @@ matrix create_empty(int Rows, int Cols){
 					
 						for(int j=0;j<Cols;j++){
 					
-						temp.element[i][j]  =0.00;
+						temp.element[i][j]  =10.00;
 						printf("  %.2lf   ",temp.element[i][j]);
 			
 	
@@ -100,25 +100,27 @@ matrix create_empty(int Rows, int Cols){
 //				free(temp);
 }
 
-matrix add(matrix *newMatrix,matrix *newMatrix1){
+matrix add(matrix FirstMatrix,matrix SecondMatrix){
 //not adding properly
 
-	matrix temp;
+
+
+//	temp.element = (_MatNum**)malloc(FirstMatrix.Rows*sizeof(_MatNum*));
+
+	for(int i=0;i<sizeof(FirstMatrix.Cols)-1;i++){
+//test statement		
+//printf("\n%d\n",FirstMatrix.Rows);
+		for(int j=0;j<sizeof(FirstMatrix.Rows)-1;j++){
 		
-	temp.element = (_MatNum**)malloc( newMatrix->Rows* sizeof(_MatNum*));
-	for(int i=0;i<newMatrix->Rows;i++){
-		
-printf("\n%d\n",newMatrix->Rows);
-		for(int j=0;j<newMatrix1->Cols;j++){
-		
-		temp.element[i][j]  = newMatrix->element[i][j]+newMatrix1->element[i][j];
+//		temp.element[i][j]  = FirstMatrix.element[i][j]+SecondMatrix.element[i][j];
 		
 //printf("matrix is\n");
-			printf("  %.2lf   ",temp.element[i][j]);
+			printf(" %.2lf  poo ",((FirstMatrix.element[i][j])+(SecondMatrix.element[i][j])));
 	
 
 		}
+		printf("\n");
 	}
-
-	return temp;
+//FirstMatrix=temp;
+	return FirstMatrix;
 }

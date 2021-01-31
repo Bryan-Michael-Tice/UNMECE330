@@ -20,6 +20,8 @@ int main(){
 
 			m=newMatrix.Rows;
 			n=newMatrix.Cols;
+			newMatrix2.Rows=m;
+			newMatrix2.Cols=n;
 
      		newMatrix  = GetMatrix(m,n,Values);
                 
@@ -46,7 +48,7 @@ int main(){
 		
 			}
 
-     		newMatrix2  = add(&newMatrix1,&newMatrix);
+     		newMatrix2  = add(newMatrix,newMatrix1);
                 
 			for(int i=0;i<m;i++){
 					
