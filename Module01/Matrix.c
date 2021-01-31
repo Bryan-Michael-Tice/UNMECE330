@@ -115,7 +115,7 @@ matrix add(matrix FirstMatrix,matrix SecondMatrix){
 //		temp.element[i][j]  = FirstMatrix.element[i][j]+SecondMatrix.element[i][j];
 		
 //printf("matrix is\n");
-			printf(" %.2lf  poo ",((FirstMatrix.element[i][j])+(SecondMatrix.element[i][j])));
+			printf(" %.2lf  ",((FirstMatrix.element[i][j])+(SecondMatrix.element[i][j])));
 	
 
 		}

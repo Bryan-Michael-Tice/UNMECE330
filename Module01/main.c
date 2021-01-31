@@ -29,7 +29,7 @@ int main(){
 					
 				for(int j=0;j<n;j++){
 					
-					printf("  %.2lf   ",newMatrix.element[i][j]);
+					printf("  \033[1;31m %.3lf\033[0m   ",newMatrix.element[i][j]);
 		       		 }
 			printf("\n");
 		
