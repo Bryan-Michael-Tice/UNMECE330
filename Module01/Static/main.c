@@ -28,7 +28,11 @@ int main()
 	    scanf("%d",&userDefined.col_dim);
 	    
 	    userDefined = create_userDefined(userDefined.row_dim,userDefined.col_dim);
-	 
+	
+            printf("\n\033[1;35m Matrix defined by user \033[0m:");
+  	    matrix_print_int(userDefined);
+	  	  
+
 	    printf("\n\033[1;31m Transposed Matrix Defined by user \033[0m:");
 	    matrix_print_int(transpose(userDefined));
 }
