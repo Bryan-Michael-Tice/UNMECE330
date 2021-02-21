@@ -17,6 +17,7 @@ int main(){
 
         HeartRates EntryFormat(NameEntry,BirthDateEntry);
 
+	std::cout<<"\x1B[35m Welcome, You Entered: \033[0m"<<std::endl;
 	std::cout<<"\x1B[35m First Name is \033[0m"<<EntryFormat.FirstNameEntry()<<std::endl;
 	std::cout<<"\x1B[35m Last Name is \033[0m"<<EntryFormat.LastNameEntry()<<std::endl;
         std::cout<<"\x1B[35m DOB is \033[0m"<<EntryFormat.DateOfBirthEntry()<<std::endl;
